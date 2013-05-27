@@ -1,0 +1,65 @@
+/* 
+    Document   : Estilo
+    Created on : 27-may-2013, 15:27:18
+    Author     : Dony
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.ImageTipo{
+    -fx-background-image: url("Nicon.png");
+    
+}
+.wellcomeBG{
+    -fx-background-color: linear-gradient(#000000, #FF7700);
+    
+}
+.UserField{
+    -fx-background-radius: 8px 8px 0 0,  8px 8px 0 0,  8px 8px 0 0,  8px 8px 0 0;  
+
+}
+.PassField{
+    -fx-background-radius: 0 0 8px 8px,  0 0 8px 8px,  0 0 8px 8px,  0 0 8px 8px;
+
+}
+
+.buttonLog{    
+    -fx-text-fill: #ffffff;
+    -Fx-font-weight: bold;
+    -fx-border-radius:   8px;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 0,2;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px 5px 5px 5px;    
+}
+
+.buttonLog:hover {
+ -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.buttonShutdown{
+ -fx-background-image: url("Nitrux/shutdown.png");
+    
+}
+.buttonShutdown:hover{
+    -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,255) , 5, 0.0 , 0 , 1 );
+}
+
+.DesktopWall1{
+ -fx-background-image: url("Wallpapers/NiconSystemWall1.png");
+ -fx-background-position: 0% 0%; 
+ 
+ 
+    
+}
+.BarrMenu{
+    -fx-text-fill: #FF7700;
+    -Fx-font-weight: bold;   
+}
+.BarrMenuObject{
+    -fx-text-fill: #000000;
+    -fx-background-radius: 8px 8px 8px 8px,  8px 8px 8px 8px,  8px 8px 8px 8px,  8px 8px 8px 8px;
+    -fx-background-color: linear-gradient(#000000, #FF7700);
+    
+}

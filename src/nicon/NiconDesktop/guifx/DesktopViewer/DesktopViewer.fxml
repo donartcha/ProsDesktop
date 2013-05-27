@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="nicon.NiconDesktop.guifx.DesktopViewer.DesktopViewerController">
+  <children>
+    <AnchorPane prefHeight="746.0" prefWidth="1024.0" styleClass="DesktopWall1" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <stylesheets>
+        <URL value="@../view/Estilo.css" />
+      </stylesheets>
+    </AnchorPane>
+    <MenuBar prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="NicoSystem">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#ActionSesiondown" text="Cerrar Sesión..." />
+            <MenuItem mnemonicParsing="false" onAction="#ActionShutdown" styleClass="buttonShutdown" text="Salir" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Menu2...">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Menu3...">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+      <stylesheets>
+        <URL value="@../view/Estilo.css" />
+      </stylesheets>
+    </MenuBar>
+  </children>
+  <stylesheets>
+    <URL value="@../view/Estilo.css" />
+  </stylesheets>
+</AnchorPane>
