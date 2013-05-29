@@ -6,10 +6,26 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="nicon.NiconDesktop.guifx.DesktopViewer.DesktopViewerController">
   <children>
-    <AnchorPane prefHeight="746.0" prefWidth="1024.0" styleClass="DesktopWall1" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <AnchorPane fx:id="desktop" prefHeight="746.0" prefWidth="1024.0" styleClass="DesktopWall1" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#OpenNiconNavigator" prefHeight="32.0" prefWidth="140.0" styleClass="buttonLog" text="Nicon Navigator">
+          <font>
+            <Font size="15.0" />
+          </font>
+          <stylesheets>
+            <URL value="@../view/Estilo.css" />
+          </stylesheets>
+        </Button>
+        <Pane fx:id="fecha" prefHeight="70.0" prefWidth="491.0" styleClass="buttonLog" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+          <stylesheets>
+            <URL value="@../view/Estilo.css" />
+          </stylesheets>
+        </Pane>
+      </children>
       <stylesheets>
         <URL value="@../view/Estilo.css" />
       </stylesheets>
@@ -22,9 +38,10 @@
             <MenuItem mnemonicParsing="false" onAction="#ActionShutdown" styleClass="buttonShutdown" text="Salir" />
           </items>
         </Menu>
-        <Menu mnemonicParsing="false" text="Menu2...">
+        <Menu mnemonicParsing="false" text="NiconNavigator">
           <items>
-            <MenuItem mnemonicParsing="false" text="Delete" />
+            <MenuItem mnemonicParsing="false" onAction="#OpenNiconNavigator" text="Open NiconNavigator" fx:id="openIN" />
+            <MenuItem mnemonicParsing="false" onAction="#CloseNiconNavigator" text="Close NiconNavigator" fx:id="closeIN" />
           </items>
         </Menu>
         <Menu mnemonicParsing="false" text="Menu3...">
