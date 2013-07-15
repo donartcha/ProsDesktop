@@ -7,12 +7,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<?scenebuilder-stylesheet ../../../Imagenes/Estilos.css?>
 
 <AnchorPane id="AnchorPane" fx:id="Navegador" prefHeight="600.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml" fx:controller="nicon.NiconDesktop.guifx.NiconNavigator.NavegadorController">
   <children>
-    <TextField fx:id="Direccion" layoutY="7.0" onKeyPressed="#PressEnter" prefHeight="32.0" prefWidth="486.0" AnchorPane.leftAnchor="71.0" />
-    <Button fx:id="navegar" layoutY="7.0" mnemonicParsing="false" onAction="#DefaultAction1" prefHeight="32.0" prefWidth="80.0" text="Navegar" AnchorPane.leftAnchor="557.0" />
+    <TextField fx:id="Direccion" layoutY="7.0" onKeyPressed="#PressEnter" prefHeight="33.0" prefWidth="486.0" AnchorPane.leftAnchor="71.0" />
+    <Button fx:id="navegar" layoutY="7.0" mnemonicParsing="false" onAction="#DefaultAction1" prefHeight="32.0" prefWidth="32.0" styleClass="Navegar" text="" AnchorPane.leftAnchor="557.0">
+      <stylesheets>
+        <URL value="@../../../Imagenes/Estilos.css" />
+      </stylesheets>
+    </Button>
     <Button fx:id="marcadores" layoutY="7.0" mnemonicParsing="false" onAction="#MarcadoresButton" prefHeight="32.0" prefWidth="32.0" styleClass="marcs" text="" AnchorPane.rightAnchor="39.0">
       <stylesheets>
         <URL value="@../../../Imagenes/Estilos.css" />
@@ -23,7 +26,10 @@
         <URL value="@../../../Imagenes/Estilos.css" />
       </stylesheets>
     </Button>
-    <TabPane fx:id="Tabs" prefHeight="579.0" prefWidth="786.0" tabClosingPolicy="SELECTED_TAB" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="47.0">
+    <TabPane fx:id="Tabs" prefHeight="579.0" prefWidth="786.0" styleClass="floating" tabClosingPolicy="SELECTED_TAB" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="47.0">
+      <stylesheets>
+        <URL value="@../../../Imagenes/Estilos.css" />
+      </stylesheets>
       <tabs>
         <Tab fx:id="Marcs" text="Marcadores">
           <content>
@@ -93,7 +99,4 @@
       </stylesheets>
     </Button>
   </children>
-  <stylesheets>
-    <URL value="@../../../Imagenes/Estilos.css" />
-  </stylesheets>
 </AnchorPane>

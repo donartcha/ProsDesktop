@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="primary" maxHeight="250.0" maxWidth="250.0" minHeight="250.0" minWidth="250.0" prefHeight="250.0" prefWidth="250.0" styleClass="RelojBGPrimario" xmlns:fx="http://javafx.com/fxml" fx:controller="nicon.NiconDesktop.guifx.Plugins.Reloj.RelojController">
+  <children>
+    <AnchorPane fx:id="secundary" prefHeight="250.0" prefWidth="250.0" styleClass="RelojBGSecundario" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Label fx:id="tiempo" prefWidth="160.0" text="00:00:00" textAlignment="LEFT" textFill="WHITE" wrapText="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="83.0" AnchorPane.topAnchor="219.0">
+          <font>
+            <Font name="System Bold" size="13.0" />
+          </font>
+        </Label>
+      </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@reloj.css" />
+  </stylesheets>
+</AnchorPane>

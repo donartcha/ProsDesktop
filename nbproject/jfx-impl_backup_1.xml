@@ -2288,6 +2288,7 @@
                 <fx:resources refid="appRes"/>
                 <fx:info title="${application.title}" vendor="${application.vendor}"/>
                 <fx:permissions elevated="${permissions.elevated}"/>
+                
                 <fx:preferences shortcut="${javafx.deploy.adddesktopshortcut}" install="${javafx.deploy.installpermanently}" menu="${javafx.deploy.addstartmenushortcut}"/>
                 <fx:template file="${javafx.run.htmltemplate}" tofile="${javafx.run.htmltemplate.processed}"/>
                 <!-- PLATFORM NOT PASSED IN FALLBACK -->

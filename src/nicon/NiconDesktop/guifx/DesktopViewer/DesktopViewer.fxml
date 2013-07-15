@@ -8,45 +8,53 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="nicon.NiconDesktop.guifx.DesktopViewer.DesktopViewerController">
+<AnchorPane id="AnchorPane" fx:id="primary" prefHeight="768.0" prefWidth="1024.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="nicon.NiconDesktop.guifx.DesktopViewer.DesktopViewerController">
   <children>
-    <AnchorPane fx:id="desktop" prefHeight="746.0" prefWidth="1024.0" styleClass="DesktopWall1" AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+    <AnchorPane fx:id="desktop" prefHeight="744.0" prefWidth="1024.0" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
       <children>
-        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#OpenNiconNavigator" prefHeight="32.0" prefWidth="140.0" styleClass="buttonLog" text="Nicon Navigator">
+        <Button fx:id="NavigatorIcon" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#OpenNiconNavigator" prefHeight="32.0" prefWidth="140.0" styleClass="buttonLog" text="Nicon Navigator">
           <font>
-            <Font size="15.0" />
+            <Font size="15.0" fx:id="x1" />
           </font>
           <stylesheets>
             <URL value="@../view/Estilo.css" />
           </stylesheets>
         </Button>
-        <Pane fx:id="fecha" prefHeight="70.0" prefWidth="491.0" styleClass="buttonLog" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+        <Button id="NavigatorIcon" fx:id="ImageFXIcon" font="$x1" layoutX="14.0" layoutY="56.0" mnemonicParsing="false" onAction="#OpenNiconImage" prefHeight="32.0" prefWidth="140.0" styleClass="buttonLog" text="NiconImageFX">
           <stylesheets>
             <URL value="@../view/Estilo.css" />
           </stylesheets>
-        </Pane>
+        </Button>
+        <AnchorPane fx:id="plugin" maxWidth="250.0" minWidth="250.0" onMouseEntered="#ActionPluginEntred" onMouseExited="#ActionPluginEsited" prefHeight="744.0" prefWidth="250.0" styleClass="transparente" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <stylesheets>
+            <URL value="@../view/Estilo.css" />
+          </stylesheets>
+        </AnchorPane>
       </children>
       <stylesheets>
         <URL value="@../view/Estilo.css" />
       </stylesheets>
     </AnchorPane>
-    <MenuBar prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+    <MenuBar fx:id="DashBar" cache="true" cacheHint="SPEED" depthTest="DISABLE" opacity="1.0" prefHeight="24.0" prefWidth="140.0" useSystemMenuBar="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
       <menus>
-        <Menu mnemonicParsing="false" text="NicoSystem">
+        <Menu mnemonicParsing="true" text="Menu">
           <items>
+            <Menu mnemonicParsing="false" text="Apps">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#OpenNiconNavigator" text="NiconNavigator" />
+                <MenuItem mnemonicParsing="false" onAction="#OpenNiconImage" text="NiconImageFX" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Configuración">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#OpenWallControler" text="Fondo de Pantalla" />
+                <MenuItem mnemonicParsing="false" onAction="#showClock" text="Zona Horaria Reloj" />
+                <MenuItem mnemonicParsing="false" text="Información" />
+              </items>
+            </Menu>
+            <SeparatorMenuItem mnemonicParsing="false" />
             <MenuItem mnemonicParsing="false" onAction="#ActionSesiondown" text="Cerrar Sesión..." />
             <MenuItem mnemonicParsing="false" onAction="#ActionShutdown" styleClass="buttonShutdown" text="Salir" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="NiconNavigator">
-          <items>
-            <MenuItem mnemonicParsing="false" onAction="#OpenNiconNavigator" text="Open NiconNavigator" fx:id="openIN" />
-            <MenuItem mnemonicParsing="false" onAction="#CloseNiconNavigator" text="Close NiconNavigator" fx:id="closeIN" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Menu3...">
-          <items>
-            <MenuItem mnemonicParsing="false" text="About" />
           </items>
         </Menu>
       </menus>
@@ -54,6 +62,8 @@
         <URL value="@../view/Estilo.css" />
       </stylesheets>
     </MenuBar>
+    <AnchorPane fx:id="clockzone" onMouseClicked="#showClock" prefHeight="24.0" prefWidth="300.0" styleClass="menu-bar" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+    <HBox fx:id="BarPane" prefHeight="24.0" prefWidth="584.0" styleClass="menu-bar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="300.0" />
   </children>
   <stylesheets>
     <URL value="@../view/Estilo.css" />

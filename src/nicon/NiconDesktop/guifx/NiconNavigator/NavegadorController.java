@@ -10,7 +10,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.URL;
@@ -55,7 +54,7 @@ import nicon.Recursos.TABs;
 public class NavegadorController implements Initializable {
     private String INIURL,carpeta,settings,marcador,name,linki,readed,descname,CarpDesc;
     private TABs NABTABs;
-    private WebView web = new WebView(); 
+    private static WebView web = new WebView(); 
     private PCData info = new PCData();
     private File Carpeta,MArcador,Settings,CDescarga,CDFinal;
     private List<Marcador> listmarcs,reader;
@@ -144,8 +143,6 @@ public class NavegadorController implements Initializable {
     
     @FXML
     private Tab Option;
-    
-   
     
     @FXML
     private ListView listM;
@@ -243,7 +240,23 @@ public class NavegadorController implements Initializable {
     }
     }}
     
-    public String getWords(String a) { 
+    private String getWords(String a) { 
+    String b;
+    String c="http://www.google.com/search?q=";
+    
+    String Separadores = "[ .,?!]+";
+    String [] words = a.split(Separadores);
+    for(int i = 0; i<words.length; i++){
+    b= words[i];
+    c= c+"+"+b;
+   
+    }
+    c = c.replace("?q=+", "?q=");
+    System.out.println(c);
+    return c; 
+    }
+    
+    private static String getStaticWords(String a) { 
     String b;
     String c="http://www.google.com/search?q=";
     
@@ -555,6 +568,28 @@ System.out.println(e);
     
     } 
     
+    /*
+     * Método para Establecer página web
+     */
+    
+    public static void SetBusqueda(String dir){
+    
+    if(dir.contains("http")==true || dir.contains("www")==true|| dir.contains(".com")==true|| dir.contains(".es")==true){
+    
+    dir = dir.replace("http://","");
+    dir = dir.replace("https://","");
+    
+    try{
+    web.getEngine().load("http://"+dir);
+    }catch(Exception e){
+    web.getEngine().load("https://"+dir);
+    }}else{
+    String search = getStaticWords(dir);
+    try{web.getEngine().load(search);}catch(Exception e){}
+    
+    }  
+    }
+    
     private void desc(){
 Dventana.run();
 System.out.println("Comenzando desc");        
@@ -822,10 +857,36 @@ Dventana.addDescarga(archivi);
     adel.getStyleClass().remove("adel");
     adel.getStyleClass().add("Dadel");
     }
-        
+      
+    private void setOrigilanLook(){
+    //Fondo de Navegador.
+    Navegador.setStyle("-fx-background-color:#424242;");
+    
+    //Barra de direccion.
+    Direccion.setStyle("-fx-background-color: linear-gradient(#BDBDBD, #FFFFFF);"
+            + "-fx-background-radius: 32px 0 0 32px,  32px 0 0 32px,  32px 0 0 32px,  32px 0 0 32px;"
+            + "-fx-padding: 10 20 10 20;");
+    
+    //Boton de retroceder.
+    back.setStyle("-fx-background-color: rgb(0, 0, 0 ,0);");
+   
+    //Boton de avanzar.
+    adel.setStyle("-fx-background-color: rgb(0, 0, 0 ,0);");
+    
+    //Boton de Navegar.
+    navegar.setStyle("-fx-background-color: linear-gradient(#BDBDBD, #FFFFFF);"
+            + "-fx-background-radius: 0 32px 32px 0, 0 32px 32px 0,0 32px 32px 0,0 32px 32px 0;"
+            + "-fx-padding: 0 0 0 0;");
+    
+    //Fondo Panelde Tabs
+    Tabs.setStyle("-fx-background-color:#424242;");
+    
+    }
+    
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-    
+    setOrigilanLook();
    
     DescImage.setCursor(javafx.scene.Cursor.HAND);
     Home.setCursor(javafx.scene.Cursor.HAND);
@@ -855,10 +916,10 @@ Dventana.addDescarga(archivi);
             
         default: 
             
-        carpeta = info.Home+"\\prosNavegator";
-        settings = info.Home+"\\prosNavegator\\settings.cfg";
-        marcador = info.Home+"\\prosNavegator\\marcador.cfg";
-        descname = info.Home+"\\prosNavegator\\descarga.cfg";
+        carpeta = info.Home+"/prosNavegator";
+        settings = info.Home+"/prosNavegator/settings.cfg";
+        marcador = info.Home+"/prosNavegator/rmarcador.cfg";
+        descname = info.Home+"/prosNavegator/descarga.cfg";
         
             break;
     }

@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.RelojBGPrimario{
+    -fx-background-color: rgba(0,0,0,0);
+
+}
+.RelojBGSecundario{
+    -fx-background-radius: 8px 8px 8px 8px,  8px 8px 8px 8px,  8px 8px 8px 8px,  8px 8px 8px 8px;
+    -fx-background-color: #ffffff,#333333;
+    -fx-background-insets: 1,2;
+}

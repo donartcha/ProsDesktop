@@ -1,0 +1,23 @@
+/* 
+    Document   : Plugins
+    Created on : 15-jul-2013, 10:33:30
+    Author     : Dony
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.PluginBGPrimario{ 
+    -fx-background-radius: 8px 8px 8px 8px,  8px 8px 8px 8px,  8px 8px 8px 8px,  8px 8px 8px 8px;
+    -fx-background-color: rgba(255,255,255,0.2),rgba(40,40,40,0.2);
+    -fx-background-insets: 1,2;
+
+}
+.PluginBGConfigurar{
+    
+    -fx-background-radius: 8px 8px 8px 8px,  8px 8px 8px 8px,  8px 8px 8px 8px,  8px 8px 8px 8px;
+    -fx-background-color: #ffffff,#333333;
+    -fx-background-insets: 1,2;
+    
+    
+}
+

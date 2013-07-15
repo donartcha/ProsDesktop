@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="primary" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass, primaryAnchorPane" xmlns:fx="http://javafx.com/fxml" fx:controller="nicon.NiconDesktop.guifx.NiconImage.NiconImageFXMLController">
+  <children>
+    <MenuBar prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="NiconImage">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#OpenImage" text="Abrir Imagen..." />
+            <MenuItem mnemonicParsing="false" onAction="#OpenFolder" text="Abrir Carpeta..." />
+            <MenuItem mnemonicParsing="false" text="Close" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <ScrollPane fx:id="scroll" prefHeight="578.0" prefWidth="800.0" styleClass="primaryAnchorPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="22.0">
+      <content>
+        <AnchorPane fx:id="visor" prefHeight="577.0" prefWidth="799.0" styleClass="primaryAnchorPane">
+          <stylesheets>
+            <URL value="@../../../Imagenes/Estilos.css" />
+          </stylesheets>
+        </AnchorPane>
+      </content>
+      <stylesheets>
+        <URL value="@../../../Imagenes/Estilos.css" />
+      </stylesheets>
+    </ScrollPane>
+  </children>
+  <stylesheets>
+    <URL value="@../../../Imagenes/Estilos.css" />
+  </stylesheets>
+</AnchorPane>

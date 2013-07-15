@@ -25,7 +25,7 @@
 
 .buttonLog{    
     -fx-text-fill: #ffffff;
-    -Fx-font-weight: bold;
+    -fx-font-weight: bold;
     -fx-border-radius:   8px;
     -fx-background-color: linear-gradient(#61a2b1, #2A5058);
     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
@@ -46,20 +46,180 @@
     -fx-effect: dropshadow( three-pass-box , rgba(255,255,255,255) , 5, 0.0 , 0 , 1 );
 }
 
-.DesktopWall1{
- -fx-background-image: url("Wallpapers/NiconSystemWall1.png");
- -fx-background-position: 0% 0%; 
- 
- 
-    
-}
 .BarrMenu{
     -fx-text-fill: #FF7700;
-    -Fx-font-weight: bold;   
+    -fx-font-weight: bold;   
 }
 .BarrMenuObject{
     -fx-text-fill: #000000;
     -fx-background-radius: 8px 8px 8px 8px,  8px 8px 8px 8px,  8px 8px 8px 8px,  8px 8px 8px 8px;
     -fx-background-color: linear-gradient(#000000, #FF7700);
+    
+}
+
+.FullScreen{
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-border-radius:   8px;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 0,2;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px 5px 5px 5px;  
+    -fx-background-image: url("FullScreen.png"); 
+    -fx-background-position:center;  
+    -fx-background-size:50px 50px;
+    -fx-background-repeat:no-repeat;
+}
+.FullScreen:hover{
+     -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.ShowWindow{
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-border-radius:   8px;
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 0,2;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px 5px 5px 5px;  
+    -fx-background-image: url("NullScreen.png"); 
+    -fx-background-position:center;  
+    -fx-background-size:20px 20px;
+    -fx-background-repeat:no-repeat;
+}
+.ShowWindow:hover{
+    -fx-background-color: rgba(70,70,70,150);
+    
+}
+
+.CloseWindow{
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-border-radius:   8px;
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 0,2;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px 5px 5px 5px;  
+    -fx-background-image: url("FullScreen.png"); 
+    -fx-background-position:center;  
+    -fx-background-size:20px 20px;
+    -fx-background-repeat:no-repeat;
+}
+.CloseWindow:hover{
+    -fx-background-color: rgba(70,70,70,150);
+    
+}
+
+.OrangeText{    
+    -fx-text-fill: #FF7700;
+    -fx-font-weight: bold;  
+}
+
+.primaryAnchorPane{
+    -fx-background-color:#333333;
+    
+}
+.zoomMas{
+    -fx-background-image: url("zoommas.png");
+    -fx-text-fill: #ffffff;
+    -Fx-font-weight: bold;
+    -fx-border-radius:   8px;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 0,2;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px 5px 5px 5px;    
+    
+}
+
+.zoomMas:hover {
+ -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.zoomMenos{
+    -fx-background-image: url("zoommenos.png");
+       -fx-text-fill: #ffffff;
+    -Fx-font-weight: bold;
+    -fx-border-radius:   8px;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 0,2;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px 5px 5px 5px;    
+    
+}
+.zoomMenos:hover {
+ -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.zoomRest{
+    -fx-background-image: url("zoomrest.png");
+       -fx-text-fill: #ffffff;
+    -Fx-font-weight: bold;
+    -fx-border-radius:   8px;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 0,2;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px 5px 5px 5px;    
+    
+}
+.zoomRest:hover {
+ -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.CloserB{
+    -fx-background-image: url("closer.png");
+       -fx-text-fill: #ffffff;
+    -Fx-font-weight: bold;
+    -fx-border-radius:   8px;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 0,2;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px 5px 5px 5px;    
+    
+}
+.CloserB:hover {
+ -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.rotI{
+    -fx-background-image: url("rotI.png");
+       -fx-text-fill: #ffffff;
+    -Fx-font-weight: bold;
+    -fx-border-radius:   8px;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 0,2;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px 5px 5px 5px;    
+    
+}
+.rotI:hover {
+ -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+
+.rotD{
+    -fx-background-image: url("rotD.png");
+       -fx-text-fill: #ffffff;
+    -Fx-font-weight: bold;
+    -fx-border-radius:   8px;
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-background-insets: 0,2;
+    -fx-background-radius: 8px;
+    -fx-padding: 5px 5px 5px 5px;    
+    
+}
+.rotD:hover {
+ -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+.transparente{
+ -fx-background-color:rgba(0,0,0,0); 
     
 }

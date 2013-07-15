@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet Plugins.css?>
+
+<AnchorPane id="AnchorPane" fx:id="primary" prefHeight="600.0" prefWidth="250.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="nicon.NiconDesktop.guifx.Plugins.PluginsController">
+  <children>
+    <AnchorPane fx:id="secundary" prefHeight="402.0" prefWidth="250.0" styleClass="PluginBGPrimario" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <Button fx:id="configurar" mnemonicParsing="false" onAction="#Action1" prefWidth="236.0" text="Configurar" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" />
+        <AnchorPane fx:id="config" prefHeight="378.0" prefWidth="250.0" styleClass="PluginBGConfigurar" visible="true" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <Slider fx:id="Opacidad" max="1.0" prefWidth="229.0" value="0.8" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="27.0" />
+            <Label text="Transparencia de Fondo:" textFill="WHITE" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="14.0">
+              <font>
+                <Font name="Arial Italic" size="11.0" fx:id="x1" />
+              </font>
+            </Label>
+            <Label font="$x1" text="Color del Fondo:" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="56.0" />
+            <ColorPicker fx:id="Color" prefWidth="132.0" AnchorPane.leftAnchor="104.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="50.0" />
+            <Button fx:id="aceptar" mnemonicParsing="false" onAction="#Action2" prefWidth="236.0" text="Aplicar Color" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="93.0" />
+            <Button fx:id="cancelar" mnemonicParsing="false" onAction="#Action3" prefWidth="236.0" text="Cancelar" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" />
+            <Label text="Plugins:" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="144.0">
+              <font>
+                <Font name="Arial Bold" size="15.0" fx:id="x2" />
+              </font>
+            </Label>
+            <CheckBox fx:id="Buscador" mnemonicParsing="false" text="Buscador" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="174.0" />
+            <Button fx:id="AceptarPlugins" mnemonicParsing="false" onAction="#Action4" prefWidth="236.0" text="Aplicar Plugins" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" />
+            <Label font="$x2" text="Barra Lateral:" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="288.0" />
+            <CheckBox id="Buscador" fx:id="Barra" mnemonicParsing="false" text="Mantener Visible" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="318.0" />
+            <CheckBox id="Buscador" fx:id="RelojCheck" mnemonicParsing="false" text="Reloj" textFill="WHITE" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="198.0" />
+          </children>
+          <stylesheets>
+            <URL value="@Plugins.css" />
+          </stylesheets>
+        </AnchorPane>
+      </children>
+      <stylesheets>
+        <URL value="@Plugins.css" />
+      </stylesheets>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@Plugins.css" />
+  </stylesheets>
+</AnchorPane>

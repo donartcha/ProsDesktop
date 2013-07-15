@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="22.0" prefWidth="300.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="nicon.NiconDesktop.clock.NiconClockController">
+  <children>
+    <Label fx:id="clockdisplay" alignment="BOTTOM_RIGHT" labelFor="$clockdisplay" prefWidth="272.0" text="Label" textAlignment="RIGHT" textFill="WHITE" underline="false" AnchorPane.bottomAnchor="4.0" AnchorPane.rightAnchor="14.0" />
+  </children>
+  <stylesheets>
+    <URL value="@niconclock.css" />
+  </stylesheets>
+</AnchorPane>

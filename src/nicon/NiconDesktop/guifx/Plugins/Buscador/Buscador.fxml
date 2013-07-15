@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="primario" maxHeight="40.0" maxWidth="250.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0" styleClass="mainFxmlClass, BuscadorBGPrimario" xmlns:fx="http://javafx.com/fxml" fx:controller="nicon.NiconDesktop.guifx.Plugins.Buscador.BuscadorController">
+  <children>
+    <AnchorPane fx:id="secundario" maxHeight="40.0" maxWidth="250.0" minHeight="40.0" minWidth="250.0" prefHeight="40.0" prefWidth="250.0" styleClass="BuscadorBGSecundario" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <TextField fx:id="Searcher" maxHeight="32.0" maxWidth="222.0" minHeight="32.0" minWidth="222.0" onKeyPressed="#Action2" onMouseClicked="#Action1" prefHeight="32.0" prefWidth="222.0" styleClass="BuscadorField" text="Buscar en Google" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="4.0">
+          <stylesheets>
+            <URL value="@buscador.css" />
+          </stylesheets>
+        </TextField>
+      </children>
+      <stylesheets>
+        <URL value="@buscador.css" />
+      </stylesheets>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@buscador.css" />
+  </stylesheets>
+</AnchorPane>

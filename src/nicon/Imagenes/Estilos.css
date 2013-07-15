@@ -9,16 +9,19 @@
     -fx-background-image: url("home.png");
 }
 .back{
-    -fx-background-image: url("back.png");
+    -fx-background-image: url("direciluz.png");
 }
 .Dback{
-    -fx-background-image: url("Dback.png");
+    -fx-background-image: url("direci.png");
 }
 .adel{
-    -fx-background-image: url("adel.png");
+    -fx-background-image: url("direcdluz.png");
 }
 .Dadel{
-    -fx-background-image: url("Dadel.png");
+    -fx-background-image: url("direcd.png");
+}
+.Navegar{
+    -fx-background-image: url("busqueda.png");
 }
 .option{
     -fx-background-image: url("gear.png");

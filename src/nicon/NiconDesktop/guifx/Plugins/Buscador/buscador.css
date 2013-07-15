@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+
+.BuscadorBGPrimario{
+    -fx-background-color: rgba(0,0,0,0);
+
+}
+.BuscadorBGSecundario{
+    -fx-background-radius: 8px 8px 8px 8px,  8px 8px 8px 8px,  8px 8px 8px 8px,  8px 8px 8px 8px;
+    -fx-background-color: #ffffff,#333333;
+    -fx-background-insets: 1,2;
+}
+.BuscadorField{
+    -fx-background-radius: 8px 8px 8px 8px,  8px 8px 8px 8px,  8px 8px 8px 8px,  8px 8px 8px 8px; 
+}
+
