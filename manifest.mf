@@ -3,3 +3,5 @@ X-COMMENT: Main-Class will be added automatically by build
 
 Permissions: all-permissions
 Codebase: *
+
+Trusted-Library=true

@@ -96,6 +96,18 @@ break;
         Icono img8 = new Icono();
         img8.setImagen(nicon.NiconDesktop.guifx.DesktopController.class.getResource("view/Wallpapers/wall7.jpg").toString());
         
+        Icono img9 = new Icono();
+        img9.setImagen(nicon.NiconDesktop.guifx.DesktopController.class.getResource("view/Wallpapers/wall8.jpg").toString());
+        
+        Icono img10 = new Icono();
+        img10.setImagen(nicon.NiconDesktop.guifx.DesktopController.class.getResource("view/Wallpapers/wall9.jpg").toString());
+        
+        Icono img11 = new Icono();
+        img11.setImagen(nicon.NiconDesktop.guifx.DesktopController.class.getResource("view/Wallpapers/wall10.jpg").toString());
+        
+        Icono img12 = new Icono();
+        img12.setImagen(nicon.NiconDesktop.guifx.DesktopController.class.getResource("view/Wallpapers/wall11.jpg").toString());
+        
         List imagenes = new ArrayList();
         imagenes.add(img1);
         imagenes.add(img2);
@@ -105,6 +117,11 @@ break;
         imagenes.add(img6);
         imagenes.add(img7);
         imagenes.add(img8);
+        imagenes.add(img9);
+        imagenes.add(img10);
+        imagenes.add(img11);
+        imagenes.add(img12);
+        
         
         
         
